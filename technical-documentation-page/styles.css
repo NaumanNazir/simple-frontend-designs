@@ -58,6 +58,7 @@ body {
   color: var(--content-color);
   line-height: 1.5;
   letter-spacing: 0.3px;
+  margin-bottom: 50px;
 }
 
 .title, .content-title {
@@ -81,6 +82,27 @@ body {
 .code-display {
   display: block;
   background-color: #ececec;
-  padding: 20px;
+  padding: 10px;
 }
 
+ /* responsive media queries */
+
+ @media only screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    width: 100%;
+  }
+
+  .nav-links {
+    height: 30%;
+  }
+
+  #main-doc {
+    top: 300px;
+    left: 0;
+  }
+
+  .title {
+    text-align: center;
+  }
+ }
