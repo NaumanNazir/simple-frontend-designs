@@ -88,13 +88,14 @@ body {
  /* responsive media queries */
 
  @media only screen and (max-width: 768px) {
-  .navbar {
+  #navbar {
     position: absolute;
     width: 100%;
+    border: none;
   }
 
   .nav-links {
-    height: 30%;
+    height: 33%;
   }
 
   #main-doc {
