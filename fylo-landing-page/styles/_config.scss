@@ -1,0 +1,141 @@
+$darkBlue: hsl(243, 87%, 12%);
+$desaturatedBlue: hsl(238, 22%, 44%);
+$brightBlue: hsl(224, 93%, 58%);
+$moderateCyan: hsl(170, 45%, 43%);
+$lightGrayishBlue: #f8f8fe;
+$lightGray: hsl(0, 0%, 75%);
+
+// set the section's size
+@mixin row-dimensions {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem 0 15rem;
+
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+
+    h1 {
+      font-size: 2.8em;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.4;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@mixin fancy-link {
+  // display: inline-block;
+  width: 190px;
+  border-bottom: 1px solid $moderateCyan;
+  padding-bottom: 3px;
+
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: $moderateCyan;
+
+    i {
+      color: $moderateCyan;
+      margin-left: 5px;
+      transition: transform 0.3s ease-out;
+    }
+  }      
+
+  &:hover i {
+    transform: translateX(2.5px);
+  }
+}
+
+@mixin image-size {
+  width: 45%;
+
+  img {
+    width: 100%;
+  }
+}
+
+// set input field
+@mixin input-field-style {
+  font-size: 14px;
+  padding: 0.7rem 0.8rem;
+  width: 60%;
+  border: 1px solid #b0b0b0;
+  border-radius: 3px;
+  margin-right: 8px;
+
+  &::placeholder {
+    letter-spacing: 1px;
+    color: $lightGray;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// set button 
+@mixin btn-style {
+  width: 30%;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  color: white;
+  background-color: $brightBlue;
+  border: none;
+  border-radius: 3px;
+  padding: 0.7rem 0.8rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// set paragraphs
+@mixin testimaonial-tile {
+  width: 380px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 3px #edecec;
+  padding: 2rem;
+  margin: 3rem 0;
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .testimonial-info-section {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 15%;
+
+      img {
+        width: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    .avatar-info {
+      margin-left: 15px;
+
+      h5 {
+        margin: 0;
+      }
+
+      p {
+        font-size: 12px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
