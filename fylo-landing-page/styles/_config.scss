@@ -5,11 +5,19 @@ $moderateCyan: hsl(170, 45%, 43%);
 $lightGrayishBlue: #f8f8fe;
 $lightGray: hsl(0, 0%, 75%);
 
+// some default styles
+* {
+  box-sizing: border-box;
+}
+
 // set the section's size
 @mixin row-dimensions {
+  width: 90%;
+  max-width: 1300px;
   display: flex;
   justify-content: space-between;
   padding: 5rem 0 15rem;
+  margin: 0 auto;
 
   .content-section {
     display: flex;
@@ -30,6 +38,16 @@ $lightGray: hsl(0, 0%, 75%);
   }
 }
 
+// set image section
+@mixin image-size {
+  width: 45%;
+
+  img {
+    width: 100%;
+  }
+}
+
+// for cyan link 
 @mixin fancy-link {
   // display: inline-block;
   width: 190px;
@@ -50,14 +68,6 @@ $lightGray: hsl(0, 0%, 75%);
 
   &:hover i {
     transform: translateX(2.5px);
-  }
-}
-
-@mixin image-size {
-  width: 45%;
-
-  img {
-    width: 100%;
   }
 }
 
@@ -98,8 +108,8 @@ $lightGray: hsl(0, 0%, 75%);
   }
 }
 
-// set paragraphs
-@mixin testimaonial-tile {
+// set testimonial 
+@mixin testimonial-tile {
   width: 380px;
   background-color: white;
   border-radius: 8px;

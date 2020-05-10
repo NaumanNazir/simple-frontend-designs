@@ -1,0 +1,13 @@
+// responsive media 
+
+@mixin breakpoint($point) {
+  @if ($point == desktop) {
+    @media only screen and (max-width: 1224px) { @content; }
+  } 
+  @else if ($point == tablet) {
+    @media only screen and (max-width: 768px) { @content; }
+  }
+  @else if ($point == mobile) {
+    @media only screen and (max-width: 425px) {@content; }
+  }
+}
