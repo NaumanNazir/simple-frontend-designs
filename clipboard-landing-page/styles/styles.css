@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1 {
+  color: #4c545d;
+}
+
+p {
+  color: #9fabb2;
+}
+
+.header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .row {
+  width: 90%;
+  max-width: 660px;
+  text-align: center;
+}
+
+.header .row .logo {
+  margin-bottom: 1rem;
+}
+
+.header .row p {
+  margin-bottom: 3rem;
+}
+
+.header .row .buttons :nth-child(n) {
+  text-decoration: none;
+  font-size: 15px;
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  margin: 0.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+
+.header .row .buttons :first-child {
+  background-color: #26baa4;
+  -webkit-box-shadow: 0px 5px 0px -1px #23ab96;
+          box-shadow: 0px 5px 0px -1px #23ab96;
+}
+
+.header .row .buttons :nth-child(2) {
+  background-color: #6173ff;
+  -webkit-box-shadow: 0px 5px 0px -1px #5a6aea;
+          box-shadow: 0px 5px 0px -1px #5a6aea;
+}
+
+.main .row {
+  width: 90%;
+  max-width: 660px;
+  text-align: center;
+  margin: 0 auto 6rem;
+}
+
+.main .full-width-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 8rem;
+}
+
+.main .full-width-row .image-section {
+  width: 52%;
+  margin-left: -35px;
+}
+
+.main .full-width-row .image-section img {
+  width: 100%;
+}
+
+.main .full-width-row .features-section {
+  width: 43%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 18rem;
+}
+
+.main .full-width-row .features-section .feature {
+  display: block;
+  padding-bottom: 3rem;
+}
+
+.main .full-width-row .features-section .feature h3 {
+  margin: 0;
+}
+
+.main .full-width-row .features-section .feature p {
+  font-size: 17px;
+  margin: 0;
+}
+
+.main .image-center-row {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main .image-center-row img {
+  width: 100%;
+}
+
+.main .options-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.main .options-row .option {
+  width: 32%;
+  font-size: 17px;
+}
+
+.main .options-row .option :first-child {
+  height: 32px;
+}
+
+.main .clients-logo-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=styles.css.map */

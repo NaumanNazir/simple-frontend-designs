@@ -1,0 +1,129 @@
+@import "_config";
+
+.header {
+  background-image: url("../images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .row {
+    width: 90%;
+    max-width: 660px;
+    text-align: center;
+
+    .logo {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    .buttons {
+      :nth-child(n) {
+        text-decoration: none;
+        font-size: 15px;
+        color: white;
+        padding: 0.8rem 2rem;
+        border-radius: 30px;
+        margin: 0.5rem;
+        transition: transform 0.3s ease-out;
+      }
+
+      :first-child {
+        background-color: $strongCyan;
+        box-shadow: 0px 5px 0px -1px #23ab96;
+      }
+
+      :nth-child(2) {
+        background-color: $lightBlue;
+        box-shadow: 0px 5px 0px -1px #5a6aea;
+      }      
+    }
+  }
+}
+
+.main {
+
+  .row {
+    width: 90%;
+    max-width: 660px;
+    text-align: center;
+    margin: 0 auto 6rem;
+  }
+
+  .full-width-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+
+    .image-section {
+      width: 52%;
+      margin-left: -35px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .features-section {
+      width: 43%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 18rem;
+
+      .feature {
+        display: block;
+        padding-bottom: 3rem;
+
+        h3 {
+          margin: 0;
+        }
+
+        p {
+          font-size: 17px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .image-center-row {
+    width: 50%;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .options-row {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    .option {
+      width: 32%;
+      font-size: 17px;
+
+      :first-child {
+        height: 32px;
+      }
+    }
+  }
+
+  .clients-logo-row {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1150px;
+    margin: 0 auto;
+  }
+}
