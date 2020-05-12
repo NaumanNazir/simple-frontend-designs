@@ -1,4 +1,5 @@
 @import "_config";
+@import "_breakpoints";
 
 .header {
   background-image: url("../images/bg-header-desktop.png");
@@ -10,9 +11,7 @@
   align-items: center;
 
   .row {
-    width: 90%;
-    max-width: 660px;
-    text-align: center;
+    @include row-dimension;
 
     .logo {
       margin-bottom: 1rem;
@@ -23,25 +22,7 @@
     }
 
     .buttons {
-      :nth-child(n) {
-        text-decoration: none;
-        font-size: 15px;
-        color: white;
-        padding: 0.8rem 2rem;
-        border-radius: 30px;
-        margin: 0.5rem;
-        transition: transform 0.3s ease-out;
-      }
-
-      :first-child {
-        background-color: $strongCyan;
-        box-shadow: 0px 5px 0px -1px #23ab96;
-      }
-
-      :nth-child(2) {
-        background-color: $lightBlue;
-        box-shadow: 0px 5px 0px -1px #5a6aea;
-      }      
+      @include double-buttons;      
     }
   }
 }
@@ -49,19 +30,20 @@
 .main {
 
   .row {
-    width: 90%;
-    max-width: 660px;
-    text-align: center;
+    @include row-dimension;
     margin: 0 auto 6rem;
   }
 
-  .full-width-row {
+  .features-row {
+    width: 95%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     margin-bottom: 8rem;
 
     .image-section {
-      width: 52%;
+      width: 65%;
+      min-width: 400px;
       margin-left: -35px;
 
       img {
@@ -70,11 +52,11 @@
     }
 
     .features-section {
-      width: 43%;
+      width: 30%;
+      min-height: 360px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-right: 18rem;
 
       .feature {
         display: block;
@@ -90,14 +72,47 @@
         }
       }
     }
+
+    // responsive styles for tablet
+    @include breakpoint(tablet) {
+      width: 90%;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+
+      .image-section {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5rem;
+      }
+
+      .features-section {
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+
+        .feature h3 {
+          font-size: 1.5em;
+          margin-bottom: 1.2rem;
+        }
+      }
+    }
   }
 
   .image-center-row {
     width: 50%;
+    min-width: 400px;
     margin: 0 auto;
 
     img {
       width: 100%;
+    }
+
+    // responsive styles for tablet
+    @include breakpoint(tablet) {
+      width: 90%;
+      margin-bottom: 5rem;
     }
   }
 
@@ -113,17 +128,151 @@
       width: 32%;
       font-size: 17px;
 
+      h3 {
+        color: $darkGrayishBlue;
+      }
+
       :first-child {
         height: 32px;
+      }
+    }
+
+    // responsive styles for tablet
+    @include breakpoint(tablet) {
+      flex-direction: column;
+      align-items: center;
+      width: 60%;
+      text-align: center;
+      
+
+      .option {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 3rem;
+
+        h3 {
+          font-size: 1.2rem;
+        }
       }
     }
   }
 
   .clients-logo-row {
-    display: flex;
-    justify-content: space-between;
     width: 90%;
-    max-width: 1150px;
+    max-width: 1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 9rem auto;
+
+    span {
+      margin: 2rem;
+    }
+  }
+  
+  .last-main-row {
+    @include row-dimension;
+    margin: 0 auto 6rem;
+    margin-bottom: 10rem;
+
+    p {
+      margin-bottom: 3rem;
+    }
+
+    .buttons {
+      @include double-buttons; 
+    }
+  }
+}
+
+.footer {
+  background-color: #eee;
+  padding: 3rem 0 1rem;
+
+  .row {
+    width: 90%;
+    max-width: 1050px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 0 auto;
+
+    .logo-section {
+      width: 6%;
+      min-width: 80px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      width: 70%;
+
+      .links {
+        list-style: none;
+        padding: 0 3rem;
+        margin: 0;
+
+        li {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 5px;
+
+          a {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .social-links {
+
+      i {
+        font-size: 24px;
+        margin-right: 5px;
+      }
+    }
+
+    // responsive styles for tablet
+    @include breakpoint(tablet) {
+      flex-direction: column;
+
+      .logo-section, .nav-links {
+        margin-bottom: 2rem;
+      }
+
+      .nav-links {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .social-links i {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+.lower-footer {
+  background-color: #eee;
+  padding: 2rem 3rem;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  
+  p {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  // responsive styles for tablet
+  @include breakpoint(tablet) {
+    justify-content: center;
   }
 }

@@ -1,0 +1,8 @@
+// responsive media queries
+
+@mixin breakpoint($point) {
+  @if ($point == tablet) {
+    @media only screen and (max-width: 784px) { @content; }
+  }
+  // @else if ()
+}
