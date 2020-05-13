@@ -1,0 +1,48 @@
+// colors
+
+$cyan: hsl(176, 68%, 64%);
+$blue: hsl(198, 60%, 50%);
+$white: hsl(0, 0%, 100%);
+$darkBlueIntro: hsl(217, 28%, 15%);
+$darkBlueBackground: hsl(218, 28%, 13%);
+$darkBlueFooter: hsl(216, 53%, 9%);
+$darkBlueTestimonial: hsl(219, 30%, 18%);
+
+
+// global styles
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: $white;
+  background-color: $darkBlueBackground;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.8em;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $white;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  color: #e8e7e7;
+  margin: 0;
+}
+
+// mixins

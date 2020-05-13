@@ -4,5 +4,7 @@
   @if ($point == tablet) {
     @media only screen and (max-width: 784px) { @content; }
   }
-  // @else if ()
+  @else if ($point == mobile) {
+    @media only screen and (max-width: 452px) { @content; }
+  }
 }

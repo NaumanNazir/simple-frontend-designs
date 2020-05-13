@@ -82,6 +82,22 @@ a:hover {
           box-shadow: 0px 5px 0px -1px #5a6aea;
 }
 
+@media only screen and (max-width: 452px) {
+  .header {
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+  }
+  .header .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .main .row {
   width: 90%;
   max-width: 660px;
@@ -103,7 +119,7 @@ a:hover {
 
 .main .features-row .image-section {
   width: 65%;
-  min-width: 400px;
+  min-width: 300px;
   margin-left: -35px;
 }
 
@@ -165,13 +181,14 @@ a:hover {
   }
   .main .features-row .features-section .feature h3 {
     font-size: 1.5em;
+    color: #4c545d;
     margin-bottom: 1.2rem;
   }
 }
 
 .main .image-center-row {
   width: 50%;
-  min-width: 400px;
+  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -230,7 +247,7 @@ a:hover {
     margin-bottom: 3rem;
   }
   .main .options-row .option h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -253,6 +270,15 @@ a:hover {
 
 .main .clients-logo-row span {
   margin: 2rem;
+}
+
+@media only screen and (max-width: 452px) {
+  .main .clients-logo-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .main .last-main-row {
@@ -290,6 +316,18 @@ a:hover {
   background-color: #6173ff;
   -webkit-box-shadow: 0px 5px 0px -1px #5a6aea;
           box-shadow: 0px 5px 0px -1px #5a6aea;
+}
+
+@media only screen and (max-width: 452px) {
+  .main .last-main-row .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .footer {
@@ -330,7 +368,7 @@ a:hover {
 
 .footer .row .nav-links .links {
   list-style: none;
-  padding: 0 3rem;
+  padding: 0 3%;
   margin: 0;
 }
 
@@ -372,6 +410,16 @@ a:hover {
   }
   .footer .row .social-links i {
     font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 452px) {
+  .footer .row .nav-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 

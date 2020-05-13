@@ -22,7 +22,18 @@
     }
 
     .buttons {
-      @include double-buttons;      
+      @include double-buttons;
+    }
+  }
+
+  // responsive styles for mobile
+  @include breakpoint(mobile) {
+    padding-top: 3rem;
+    margin-bottom: 5rem;
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -43,7 +54,7 @@
 
     .image-section {
       width: 65%;
-      min-width: 400px;
+      min-width: 300px;
       margin-left: -35px;
 
       img {
@@ -94,6 +105,7 @@
 
         .feature h3 {
           font-size: 1.5em;
+          color: $darkGrayishBlue;
           margin-bottom: 1.2rem;
         }
       }
@@ -102,7 +114,7 @@
 
   .image-center-row {
     width: 50%;
-    min-width: 400px;
+    min-width: 300px;
     margin: 0 auto;
 
     img {
@@ -151,7 +163,7 @@
         margin-bottom: 3rem;
 
         h3 {
-          font-size: 1.2rem;
+          font-size: 1.5rem;
         }
       }
     }
@@ -169,6 +181,11 @@
     span {
       margin: 2rem;
     }
+
+    // responsive styles for mobile
+    @include breakpoint(mobile) {
+      flex-direction: column;
+    }
   }
   
   .last-main-row {
@@ -182,6 +199,14 @@
 
     .buttons {
       @include double-buttons; 
+    }
+
+    // responsive styles for mobile
+    @include breakpoint(mobile) {
+      .buttons {
+        display: flex;
+        flex-direction: column;
+      }
     }
   }
 }
@@ -213,7 +238,7 @@
 
       .links {
         list-style: none;
-        padding: 0 3rem;
+        padding: 0 3%;
         margin: 0;
 
         li {
@@ -251,6 +276,14 @@
 
       .social-links i {
         font-size: 40px;
+      }
+    }
+
+    // responsive styles for mobile
+    @include breakpoint(mobile) {
+      .nav-links {
+        flex-direction: column;
+        text-align: center;
       }
     }
   }
