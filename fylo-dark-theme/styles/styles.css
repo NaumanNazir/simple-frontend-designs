@@ -16,6 +16,18 @@ h1 {
   line-height: 1.5;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.3em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
 h3 {
   font-family: 'Raleway', sans-serif;
 }
@@ -147,6 +159,20 @@ p {
   height: 78px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .features-grid {
+    grid-gap: 6rem;
+    row-gap: 5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .features-grid {
+    -ms-grid-columns: (minmax(220px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}
+
 .stay-productive-row {
   width: 90%;
   max-width: 1300px;
@@ -206,12 +232,31 @@ p {
           transform: translateX(2.5px);
 }
 
+@media only screen and (max-width: 768px) {
+  .stay-productive-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .stay-productive-row .image-section, .stay-productive-row .content-section {
+    width: 100%;
+  }
+  .stay-productive-row .image-section {
+    margin-bottom: 3rem;
+  }
+}
+
 .testimonial-row {
   width: 90%;
-  max-width: 1300px;
+  max-width: 1400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
   padding: 3rem 0;
   margin: 0 auto;
 }
@@ -221,7 +266,7 @@ p {
   background-color: #202a3c;
   border-radius: 8px;
   padding: 2rem;
-  margin: 3rem 1.5rem;
+  margin: 3rem 1rem;
 }
 
 .testimonial-row .testimonial-tile p {
@@ -263,15 +308,55 @@ p {
 
 .testimonial-row:before {
   content: open-quote;
-  position: relative;
+  position: absolute;
   display: block;
   line-height: 0;
-  left: 80px;
-  top: 85px;
+  top: 132px;
+  left: 32px;
   color: #65e2d9;
   font-size: 13em;
   margin: 0.5rem 0 0.9rem;
   z-index: -10;
+}
+
+@media only screen and (max-width: 1024px) {
+  .testimonial-row .testimonial-tile {
+    margin: 3rem 0.7rem;
+  }
+  .testimonial-row:before {
+    top: 126px;
+    left: 0;
+    font-size: 11em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .testimonial-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .testimonial-row .testimonial-tile {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .testimonial-row:before {
+    top: 94px;
+    left: 142px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .testimonial-row .testimonial-tile {
+    width: 315px;
+  }
+  .testimonial-row:before {
+    left: 20px;
+  }
 }
 
 .ready-section {
@@ -350,6 +435,26 @@ p {
   border-radius: 30px;
   border: none;
   padding: 0.8rem 5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .ready-section .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ready-section .form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .ready-section .small-tile {
+    padding: 1.5rem;
+  }
 }
 
 .footer {
@@ -458,24 +563,59 @@ p {
   padding: 0 10px;
 }
 
-.footer .lower-footer {
+@media only screen and (max-width: 1024px) {
+  .footer .wrapper {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer .wrapper {
+    width: 90%;
+  }
+  .footer .wrapper .footer-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 0;
+  }
+  .footer .wrapper .footer-content .about-info, .footer .wrapper .footer-content .contact-detail {
+    width: 60%;
+  }
+  .footer .wrapper .footer-content .contact-detail {
+    margin-bottom: 2rem;
+  }
+  .footer .wrapper .footer-content .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .footer .wrapper .footer-content .footer-nav .links li {
+    margin-bottom: 1rem;
+  }
+}
+
+.lower-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0 5rem;
+  background-color: #0b1523;
 }
 
-.footer .lower-footer p {
+.lower-footer p {
   font-size: 13px;
   color: white;
   padding: 2rem;
   margin: 0;
 }
 
-.footer .lower-footer a {
+.lower-footer a {
   color: white;
 }
 /*# sourceMappingURL=styles.css.map */
