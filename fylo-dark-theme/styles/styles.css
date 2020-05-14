@@ -312,7 +312,7 @@ p {
   display: block;
   line-height: 0;
   top: 132px;
-  left: 32px;
+  left: 68px;
   color: #65e2d9;
   font-size: 13em;
   margin: 0.5rem 0 0.9rem;
@@ -482,7 +482,6 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2rem;
 }
 
 .footer .wrapper .footer-content .about-info {
@@ -578,7 +577,6 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 0;
   }
   .footer .wrapper .footer-content .about-info, .footer .wrapper .footer-content .contact-detail {
     width: 60%;

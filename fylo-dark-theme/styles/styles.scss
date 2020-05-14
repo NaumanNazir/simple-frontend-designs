@@ -226,7 +226,7 @@
     display: block;
     line-height: 0;
     top: 132px;
-    left: 32px;
+    left: 68px;
     color: $cyan;
     font-size: 13em;
     margin: 0.5rem 0 0.9rem;
@@ -368,7 +368,6 @@
     .footer-content {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 2rem;
 
       .about-info {
         width: 32%;
@@ -457,7 +456,6 @@
 
       .footer-content {
         flex-direction: column;
-        margin-bottom: 0;
 
         .about-info, .contact-detail {
           width: 60%;
