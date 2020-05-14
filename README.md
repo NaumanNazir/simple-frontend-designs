@@ -1,5 +1,20 @@
-# simple-frontend-designs
+# Simple Frontend Designs
 
-These design are taken from different websites to demonstrate my frontend skills. 
+These are the beginner and junior level designs taken from two websites.
+..* [Free code camp](https://www.freecodecamp.org/)
+..* [Frontend Mentor](https://www.frontendmentor.io/)  
+Entire code is written by me to demostrate my skills.
 
-All the designs are based on HTML5 and CSS3.
+### Technologies
+..* HTML
+..* CSS
+..* SASS
+
+### Demos
+..* [Single price component](https://codepen.io/naumannazir/full/qBOYywr)
+..* [Technical Documentation Page](https://codepen.io/naumannazir/full/QWwajNd)
+..* [Portfolio](https://codepen.io/naumannazir/full/vYEVqWG)
+
+<!-- ..* [Single price component](https://codepen.io/naumannazir/full/qBOYywr)
+..* [Single price component](https://codepen.io/naumannazir/full/qBOYywr)
+..* [Single price component](https://codepen.io/naumannazir/full/qBOYywr) -->
