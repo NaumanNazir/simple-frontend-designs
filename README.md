@@ -1,10 +1,8 @@
 # Simple Frontend Designs
 
-These are the beginner and junior levels designs taken from two websites.
+These small projects ara made by me. Beginner and junior levels designs taken from two websites.
 * [Free code camp](https://www.freecodecamp.org/)
 * [Frontend Mentor](https://www.frontendmentor.io/)  
-
-Entire code is written by me to demostrate my skills.
 
 ### Technologies
 * HTML
